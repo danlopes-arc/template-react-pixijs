@@ -30,7 +30,7 @@ export const useGame = (containerRef: ContainerRef): Game | null => {
       container.removeChild(localGame.view);
       localGame.destroy();
     };
-  }, []);
+  }, [containerRef]);
 
   return game;
 };
